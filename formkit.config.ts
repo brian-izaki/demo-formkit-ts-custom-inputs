@@ -7,7 +7,9 @@ const config: DefaultConfigOptions = {
   icons: { ...genesisIcons },
   config: { rootClasses },
   inputs: {
-    customExample: createInput(CustomExample, {}),
+    customExample: createInput(CustomExample, {
+      props: ['testId'],
+    }),
   },
 };
 
